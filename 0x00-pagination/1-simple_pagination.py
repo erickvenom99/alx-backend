@@ -56,4 +56,4 @@ class Server:
         if start_index >= total_size:
             return []
 
-        return data[start_index:end_index + 1]
+        return data[start_index:end_index]
