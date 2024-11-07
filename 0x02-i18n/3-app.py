@@ -10,6 +10,10 @@ app = Flask(__name__)
 
 
 class Config:
+    """Creates a language attribute
+       with default local language and
+       timezone
+    """
     LANGUAGES = ["en", "fr"]
     BABEL_DEFAULT_LOCALE = "en"
     BABEL_DEFAULT_TIMEZONE = "UTC"
@@ -37,7 +41,7 @@ def index():
     """
     Renders the index.html template.
     """
-    return render_template('0-index.html')
+    return render_template('3-index.html')
 
 
 if __name__ == '__main__':
